@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fav Foods</title>
+</head>
+<body>
+  <h1>Fav Foods</h1>
+  <% favFoods.forEach(food => { %>
+    <li>
+      <%= food.food %>
+      - 
+      <%= food.spicy ? 'spicy' : 'not spicy' %>
+    </li>
+  <% }) %>
+</body>
+</html>

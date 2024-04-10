@@ -1,8 +1,8 @@
 const favFoods = [
-  {food: 'spagitti', spicy: 'true'},
-  { food: 'Injera', spicy: 'true'},
-  {food: 'Fried Chicken', spicy: 'false'},
-  {food: 'Ramen', spicy: 'true'},
+  {food: 'spagitti', spicy: 'spicy'},
+  {food: 'Injera', spicy: 'spicy'},
+  {food: 'Fried Chicken', spicy: 'not spicy'},
+  {food: 'Ramen', spicy: 'spicy'},
 ]
 
 export {
