@@ -1,7 +1,7 @@
 // import modules
 
 import express from 'express'
-import { favFoods } from './data/fav-foods'
+import { favFoods } from './data/favfoods-data.js'
 
 // create Express app
 
@@ -16,17 +16,21 @@ app.set('view engine', 'ejs')
 
 
 // mount routes
-app.set('/', function (req, res){
-  res.render('home')
-})
+// app.set('/', function (req, res){
+//   res.render('home')
+// })
 app.get('/', function (req, res){
-  res.send('Hello Express')
+  res.send('Hello Page')
 })
 
 app.get('/favFoods', function(req, res){
   res.render('favFoods/index', {
     favFoods: favFoods
   })
+})
+
+app.get('/', function (req, res) {
+  res.redirect('/home')
 })
 
 // tell the app to listen on port 3000
