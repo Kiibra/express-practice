@@ -1,6 +1,7 @@
 // import modules
 
 import express from 'express'
+import { favFoods } from './data/fav-foods'
 
 // create Express app
 
@@ -22,7 +23,11 @@ app.get('/', function (req, res){
   res.send('Hello Express')
 })
 
-
+app.get('/favFoods', function(req, res){
+  res.render('favFoods/index', {
+    favFoods: favFoods
+  })
+})
 
 // tell the app to listen on port 3000
 
