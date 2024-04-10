@@ -1,7 +1,7 @@
 // import modules
 
 import express from 'express'
-import { favFoods } from './data/favfoods-data.js'
+import { favFoods } from './data/favFoods-data.js'
 
 // create Express app
 
