@@ -7,7 +7,7 @@ import express from 'express'
 const app = express()
 
 // configure the app (app.set)
-
+app.set('view engine', 'ejs')
 
 
 // mount Middleware (app.use)
@@ -15,6 +15,9 @@ const app = express()
 
 
 // mount routes
+app.set('/', function (req, res){
+  res.render('home')
+})
 app.get('/', function (req, res){
   res.send('Hello Express')
 })
