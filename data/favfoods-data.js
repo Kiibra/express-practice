@@ -1,4 +1,4 @@
-const favFoods = [
+const favfoods = [
   {name: 'Spagitti', spicy: false},
   {name: 'Injera', spicy: false},
   {name: 'Fried Chicken', spicy: false},
@@ -6,5 +6,5 @@ const favFoods = [
 ]
 
 export {
-  favFoods
+  favfoods
 }

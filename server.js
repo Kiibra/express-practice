@@ -1,7 +1,7 @@
 // import modules
 
 import express from 'express'
-import { favFoods } from './data/favFoods-data.js'
+import { favfoods } from './data/favfoods-data.js'
 
 // create Express app
 
@@ -23,9 +23,9 @@ app.get('/', function (req, res){
   res.send('Hello Page')
 })
 
-app.get('/favFoods', function(req, res){
-  res.render('favFoods/index', {
-    favFoods: favFoods
+app.get('/favfoods', function(req, res){
+  res.render('favfoods/index', {
+    favfoods: favfoods
   })
 })
 
